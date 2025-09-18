@@ -252,6 +252,58 @@ nav {
   display: block;
 }
 
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* Contact Us Button */
+.contact-btn {
+  background: yellow;
+  color: black !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 10px;
+  }
+
+  nav .nav-links.show {
+    display: flex;
+  }
+
+  nav .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+
 /* For smaller screens */
 @media (max-width: 768px) {
   .nav-links {
@@ -441,4 +493,5 @@ a:hover { text-decoration:underline;
 
    
    
+
   
