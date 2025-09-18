@@ -69,7 +69,14 @@ menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("active");
   navLinks.classList.toggle("show");
 });
-
+document.querySelectorAll(".dropdown > .dropbtn").forEach(btn => {
+  btn.addEventListener("click", e => {
+    e.preventDefault(); // prevent accidental page jump
+    const parent = btn.parentElement;
+    parent.classList.toggle("active");
+  });
+});
 
    
+
 
