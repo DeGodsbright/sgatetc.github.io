@@ -17,14 +17,21 @@
   <!-- Header -->
   <header>
   <div class="header-container">
+    <!-- Logo -->
     <div class="logo-container">
       <img src="Photos/SGTC Logo.jpg" alt="SGTC Logo" class="logo">
-      <h1></h1>
     </div>
 
+    <!-- Hamburger Menu (mobile only) -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <!-- Navigation -->
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
+
         <li class="dropdown">
           <a href="about.html" class="dropbtn">About Us ▾</a>
           <ul class="dropdown-content">
@@ -34,18 +41,22 @@
             <li><a href="branches.html">Branches</a></li>
           </ul>
         </li>
-        
-        <li><a href="membership.html">Membership</a></li>
+
         <li class="dropdown">
-          <a href="about.html" class="dropbtn">Departments ▾</a>
+          <a href="#" class="dropbtn">Departments ▾</a>
           <ul class="dropdown-content">
-            <li><a href="vision.html">Women's Fellowship</a></li>
-            <li><a href="mission.html">Men's Felloship</a></li>
-            <li><a href="history.html">Children's Ministry</a></li>
-            <li><a href="branches.html">Youth Ministry</a></li>
+            <li><a href="women.html">Women's Fellowship</a></li>
+            <li><a href="men.html">Men's Fellowship</a></li>
+            <li><a href="children.html">Children's Ministry</a></li>
+            <li><a href="youth.html">Youth Ministry</a></li>
           </ul>
+        </li>
+
         <li><a href="membership.html">Membership</a></li>
-         <a href="contact.html" class="contact-btn">Contact Us</a>
+
+        <li>
+          <a href="contact.html" class="contact-btn">Contact Us</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -202,4 +213,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
