@@ -59,6 +59,8 @@ header {
   background: #2c3e50;
   color: white;
   padding: 0.8rem 2rem;
+  position: relative;  /* create stacking context */
+  z-index: 1000;       /* make sure it’s above hero */
 }
 
 .header-container {
@@ -96,6 +98,9 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
+  top: 70px;   /* below header */
+  right: 0;
+  z-index: 1100;    /* even above hero */
 }
 
 .nav-links li a {
@@ -449,6 +454,7 @@ a:hover { text-decoration:underline;
   color: #2c2c2c;
   font-size: 0.95rem;
 }
+
 
 
 
