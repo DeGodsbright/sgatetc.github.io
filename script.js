@@ -67,4 +67,11 @@ document.addEventListener('DOMContentLoaded', function(){
       document.getElementById("navLinks").classList.toggle("show");
     }
 
+
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+
+
    
