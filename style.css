@@ -196,6 +196,15 @@ nav {
   display: block;
 }
 
+/* Desktop only */
+@media (min-width: 769px) {
+  .dropdown .dropbtn::after {
+    content: " ▾";
+    font-size: 0.8em;
+  }
+}
+
+
 /* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -235,11 +244,6 @@ nav {
 
   .dropdown.active .dropdown-content {
     display: block; /* opens properly inside */
-  }
-
-  .dropdown .dropbtn::after {
-    content: " ▾";
-    font-size: 0.8em;
   }
 }
 
@@ -402,6 +406,7 @@ a:hover { text-decoration:underline;
   color: #2c2c2c;
   font-size: 0.95rem;
 }
+
 
 
 
