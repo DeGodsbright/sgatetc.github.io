@@ -227,7 +227,7 @@ nav {
   /* Mobile Dropdowns */
   .dropdown-content {
     position: static;
-    background: #111;
+    background: #808080;
     box-shadow: none;
     border-radius: 0;
     display: none;
@@ -398,6 +398,7 @@ a:hover { text-decoration:underline;
   color: #2c2c2c;
   font-size: 0.95rem;
 }
+
 
 
 
