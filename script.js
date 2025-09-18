@@ -62,21 +62,32 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+// Toggle nav menu (hamburger)
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active");
-  navLinks.classList.toggle("show");
-});
-document.querySelectorAll(".dropdown > .dropbtn").forEach(btn => {
-  btn.addEventListener("click", e => {
-    e.preventDefault(); // prevent accidental page jump
-    const parent = btn.parentElement;
-    parent.classList.toggle("active");
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    menuToggle.classList.toggle("active");
   });
-});
 
+  // Toggle dropdowns on mobile
+  document.querySelectorAll(".dropdown > .dropbtn").forEach(button => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const parent = button.parentElement;
+
+      // Close other dropdowns
+      document.querySelectorAll(".dropdown").forEach(d => {
+        if (d !== parent) d.classList.remove("active");
+      });
+
+      // Toggle this one
+      parent.classList.toggle("active");
+    });
+  });
    
+
 
 
