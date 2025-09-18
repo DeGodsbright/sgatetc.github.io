@@ -168,6 +168,7 @@ nav {
   flex-direction: column;
   cursor: pointer;
   z-index: 1001;
+   margin-left: auto;   /* ✅ pushes hamburger to far right */
 }
 
 .menu-toggle span {
@@ -448,6 +449,7 @@ a:hover { text-decoration:underline;
   color: #2c2c2c;
   font-size: 0.95rem;
 }
+
 
 
 
